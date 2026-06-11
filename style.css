@@ -1,0 +1,139 @@
+/* ==========================================================================
+   1. CONFIGURAÇÕES GERAIS (RESET & FONTES)
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que espaçamentos não quebrem o layout */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #2c3e50; /* Cinza escuro, mais suave que o preto puro */
+    background-color: #f7fbf7; /* Fundo levemente esverdeado/claro */
+}
+
+/* ==========================================================================
+   2. CABEÇALHO (HEADER) E NAVEGAÇÃO
+   ========================================================================== */
+header {
+    background-color: #1b5e20; /* Verde escuro (Agro/Natureza) */
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 5px solid #81c784; /* Linha de destaque verde clara */
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.1rem;
+    font-style: italic;
+    opacity: 0.9;
+    margin-bottom: 20px;
+}
+
+/* Menu de Navegação */
+nav ul {
+    list-style: none;
+    display: block;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #81c784; /* Muda de cor quando passa o mouse */
+}
+
+/* ==========================================================================
+   3. CONTEÚDO PRINCIPAL (MAIN & SECTIONS)
+   ========================================================================== */
+main {
+    max-width: 800px; /* Limita a largura do texto para melhor leitura */
+    margin: 40px auto; /* Centraliza a página e dá espaçamento topo/fundo */
+    padding: 0 20px;
+}
+
+section {
+    background-color: #ffffff;
+    margin-bottom: 30px;
+    padding: 25px;
+    border-radius: 8px; /* Cantos arredondados modernos */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Sombra bem leve */
+}
+
+section h2 {
+    color: #2e7d32; /* Verde médio para os títulos internos */
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+section p {
+    margin-bottom: 15px;
+    text-align: justify; /* Alinhamento do texto justificado */
+}
+
+/* Estilização da lista de Práticas Sustentáveis */
+section ul {
+    list-style-position: inside;
+    margin-top: 10px;
+}
+
+section ul li {
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+
+section ul li strong {
+    color: #3e2723; /* Tom marrom terra para destacar os termos */
+}
+
+/* ==========================================================================
+   4. RODAPÉ (FOOTER)
+   ========================================================================== */
+footer {
+    background-color: #2c3e50;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    margin-top: 50px;
+}
+
+/* ==========================================================================
+   5. RESPONSIVIDADE (ADAPTAÇÃO PARA CELULARES)
+   ========================================================================== */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav ul li {
+        display: block; /* Transforma o menu horizontal em vertical no celular */
+        margin: 10px 0;
+    }
+
+    main {
+        margin: 20px auto;
+    }
+
+    section {
+        padding: 15px;
+    }
+}
